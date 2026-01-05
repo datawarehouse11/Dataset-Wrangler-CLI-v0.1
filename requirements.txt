@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## requirements.txt
 pandas==2.2.0
 numpy==1.26.4
@@ -15,4 +16,23 @@ numpy==1.26.4
 
 # --impute: imputation strategy (median|mean|mode|none)
 
+=======
+## requirements.txt
+pandas==2.2.0
+numpy==1.26.4
+
+## Usage
+# python main.py \
+#   --input examples/sample.csv \
+#   --output cleaned.csv \
+#   --impute median \
+#   --encode gender:male=0,female=1
+
+# --input: path to CSV/JSON
+
+# --output: path to save cleaned file
+
+# --impute: imputation strategy (median|mean|mode|none)
+
+>>>>>>> 0b980f8 (Initial commit: Dataset Wrangler CLI v0.1)
 # --encode: simple categorical mapping in the form col:a=0,b=1
