@@ -1,0 +1,7 @@
+# examples/samples.csv
+id,age,gender,income
+1,34,male,55000
+2,,female,62000
+3,29,male,58000
+3,29,male,58000
+4,,female,61000
