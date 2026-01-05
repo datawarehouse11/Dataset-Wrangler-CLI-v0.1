@@ -19,7 +19,7 @@ The goal was simple: prove I can ship a working artifact that takes raw data, cl
 ---
 
 ## Project Layout
-'''
+```
 dataset-wrangler/
 ├─ wrangler/
 │  ├─ io.py           # load/save datasets
@@ -33,7 +33,7 @@ dataset-wrangler/
 ├─ main.py            # entry point
 ├─ requirements.txt   # dependencies
 └─ README.md          # documentation
-'''
+```
 
 ## Installation
 Clone the repo and install dependencies:
