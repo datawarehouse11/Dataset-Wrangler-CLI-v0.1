@@ -80,11 +80,8 @@ id,age,gender
 2,31.5,1
 3,29,0
 
-Roadmap
-- v1.0 → Logging, config file support, benchmarks, expanded tests
-- v2.0 → Pipelines + profiling
-- v3.0 → Cross‑language ports (Go, TypeScript)
-- v4.0 → Agent layer for autonomous dataset wrangling
+## Roadmap
+See [ROADMAP.md](ROADMAP.md) for upcoming features and iterations.
 
 License
 MIT License — free to use, modify, and share.
