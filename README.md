@@ -9,13 +9,15 @@ The goal was simple: prove I can ship a working artifact that takes raw data, cl
 ---
 
 ## What It Does
-- Load datasets from **CSV** or **JSON**
+- Load datasets from CSV or JSON
 - Drop duplicate rows
 - Impute missing numeric values (median, mean, mode, or none)
 - Encode categorical variables with custom mappings
 - Save the cleaned dataset back to disk
+- NEW in v1.0:
+ - Logs every cleaning step with row counts and actions
+ - Generates a wrangler.log file for transparency and debugging
 - Includes smoke tests to validate the basics
-
 ---
 
 ## Project Layout
@@ -50,6 +52,13 @@ python main.py \
   --impute median \
   --encode gender:male=0,female=1 \
   --drop-duplicates
+
+After running, check the log file:
+wrangler.log
+2026-01-09 16:00:00 - INFO - Loading dataset from examples/sample.csv
+2026-01-09 16:00:00 - INFO - Dropped duplicates. Rows reduced from 4 to 3
+2026-01-09 16:00:00 - INFO - Removed rows with missing values. Final row count: 2
+2026-01-09 16:00:00 - INFO - Cleaned dataset saved to cleaned.csv
 
 Testing
 I added smoke tests to prove the basics work. Run them with:
