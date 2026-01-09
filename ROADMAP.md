@@ -6,9 +6,9 @@ v0.1 (Shipped)
 - Smoke tests + example dataset
 - Public blog + repo announcement
 
-v1.0 (Next Release 🚀)
-- Add logging for transparency
-- Config file support for reproducibility
+v1.0 (Next Release)
+- Add logging for transparency [Complete!]
+- Config file support for reproducibility [In progress!]
 - Expanded cleaning strategies (scaling, outlier handling, normalization)
 - Benchmarks on larger datasets
 - Expanded test suite (unit + integration)
